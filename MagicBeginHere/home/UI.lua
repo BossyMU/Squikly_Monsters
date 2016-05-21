@@ -61,14 +61,12 @@ function hideShowIcons(tama)
     yAxis = {75}
 
     if icons[1].alpha == 0 then
-    	print("Show")
         for i = 1, 1 do
             transition.to(icons[i], 
                 {x = tama.x + xAxis[i], y = tama.y - yAxis[i],
                 alpha = 1, time = 250})
         end
     else
-    	print("Hide")
         for i = 1, 1 do
             transition.to(icons[i], 
                 {x = tama.x, y = tama.y,
